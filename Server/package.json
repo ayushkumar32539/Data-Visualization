@@ -1,5 +1,25 @@
 {
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "clean": "rm dist/bundle.js",
+    "start": "react-scripts start",
+    "build-prod": "parcel build src/index.html"
+  },
   "dependencies": {
+    "node-sass": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "gh-pages": "^4.0.0",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.7.1"
   }
+  
 }

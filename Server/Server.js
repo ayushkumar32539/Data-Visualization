@@ -7,6 +7,7 @@ var fs = require('fs'); //require file system object
 app.get('/getdata', function(req, res){
     fs.readFile(__dirname + "/" + "jsondata.json", 'utf8', function(err, data){
         // console.log(data);
+        res.sendStatus(200)-
         res.end(data); // you can also use res.send()
     });
 })

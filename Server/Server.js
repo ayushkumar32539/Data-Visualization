@@ -6,7 +6,7 @@ var fs = require('fs'); //require file system object
 // Endpoint to Get a list of users
 app.get('/getdata', function(req, res){
     fs.readFile(__dirname + "/" + "jsondata.json", 'utf8', function(err, data){
-        console.log(data);
+        // console.log(data);
         res.end(data); // you can also use res.send()
     });
 })
